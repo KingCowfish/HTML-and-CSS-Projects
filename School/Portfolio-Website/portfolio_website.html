@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Alexander Broder's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+    </head>
+
+<!-- Body -->
+    <body class="background">
+
+<!-- Nav Bar -->
+        <div class="Navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+<!-- Home -->
+            <br> <!-- Breaks inserted to add space between navbar and first heading -->
+            </br>
+
+<!-- Video -->
+        <div id="home">
+            <video autoplay muted loop id="galaxy">
+<!-- Makes video play automatically, on a loop, with no sound -->
+                <source src="./video/galaxy.mp4" type="video/mp4">
+                Your browser does not support HTML5 video. <!-- Display message if video fails to run -->                
+            </video>
+        </div>
+
+<!-- Video text -->
+        <div class="video_text">
+            <h1 style="color: cadetblue; font-style:oblique;">Alexander Broder's Portfolio</h1>
+                <p>
+                    <strong>
+                        <center>
+                            <q>We are all in the gutter,<br>
+                            but some of us are looking at the stars.
+                            </q>
+                            <br>-Oscar Wilde<br>
+                            <br>
+                            Hello!  My name is Alexander Broder.  Welcome to my portfolio website.<br>
+                            Let me know what you think!<br>
+                        </center>
+                    </strong>
+                </p>
+        </div>
+
+<!-- About section -->
+        <div class="row">
+            <div class="column_2"> <!-- Left column -->
+                <img src="./images/corgi_fields.jpg" alt="Me and my corgi.">
+            </div>
+            <div class="column_1" id="about"> <!-- Right Column -->
+                <h1>About</h1>
+                <p>
+                I am a recent coding convert who loves to play with my Welsh corgi Karma and look up at the stars!<br><br>
+                Currently, I am studying software development at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy,</a>
+                where I plan to focus on the C# coding language and the .Net Framework.<br><br>
+                While I have only been at the school for a little while now, I already
+                know that my decision to change caeers was the correct one. I have always
+                enjoyed creative problem solving (even to the point where I made it through
+                an entire Python textbook because I enjoyed it so much!) so software development
+                feels like the perfect fit for me. I am truly excited to learn and grow within 
+                this field.  I'd love to talk so feel free to <a href="#contact">contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+<!-- Github section -->
+        <div class="row">
+            <div class="column_1" " id="github"> <!-- Left column -->
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:<br>
+                    <center><a href="https://github.com/KingCowfish" target="_blank">Alexander Broder's GitHub</a></center> 
+                </p>
+            </div>
+            <div class="column_2"> <!-- Right column-->
+                <a href="https://github.com/KingCowfish" target="_blank"><img src="./images/octonaut.jpg" alt="GitHub"></a>
+            </div>
+        </div>
+
+    <!-- Contact section -->
+        <div class="row">
+            <div class="column_3"> <!-- Contact Image, left column -->
+                <img src="./images/mail.png">
+            </div>
+            <div class="column_1"  id="contact"> <!-- contact form, right column -->
+                <h1>Contact</h1>
+                    <form action="" method="get"> <!-- This specifies where to send the form data 
+                    and how; it is left blank -->
+                        <label>Name:</label>
+                            <input type="text" placeholder="Please enter your name here:">
+                        <label>Email:</label>
+                            <input type="text" id="Email" name="Email" placeholder="Please enter your name here:">
+                        <label>Message:</label>
+                            <input type="text" id="Message" name="Message" placeholder="Please write your message here:">
+                            <input type="submit" value="Submit">
+                    </form>
+            </div>
+        </div>
+
+<!-- Footer section -->
+    <footer>
+        <p>
+            <center><a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
+        </p>
+    </footer>
+
+    </body>
+</html>
