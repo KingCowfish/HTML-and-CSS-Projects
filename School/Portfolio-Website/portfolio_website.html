@@ -85,7 +85,7 @@
             </div>
         </div>
 
-    <!-- Contact section -->
+<!-- Contact section -->
         <div class="row">
             <div class="column_3"> <!-- Contact Image, left column -->
                 <img src="./images/mail.png">
@@ -100,7 +100,7 @@
                             <input type="text" id="Email" name="Email" placeholder="Please enter your name here:">
                         <label>Message:</label>
                             <input type="text" id="Message" name="Message" placeholder="Please write your message here:">
-                            <input type="submit" value="Submit">
+                            <input type="submit" value="Submit"class="btn btn-secondary popover-dismiss" data-container="body" data-toggle="popover" data-placement="right" data-content="Thanks so much for reaching out!">
                     </form>
             </div>
         </div>
@@ -111,6 +111,17 @@
             <center><a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
         </p>
     </footer>
+
+<!-- jQuery first, then bootstrap js -->
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+        <script>
+            $('.popover-dismiss').popover({
+                trigger: 'focus'
+            })
+        </script>
 
     </body>
 </html>
