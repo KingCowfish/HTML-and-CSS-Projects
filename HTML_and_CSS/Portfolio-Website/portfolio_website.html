@@ -7,14 +7,23 @@
         <title>Alexander Broder's Portfolio</title>
         <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
         <script src="jss/portfolio.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     </head>
 
 <!-- Body -->
     <body class="background">
+        <script>
+            document.body.className += ' fade-out';
+                $(function() {
+                $('body').removeClass('fade-out');
+                }
+            );
+            
+        </script>
 
 <!-- Nav Bar -->
         <div class="Navbar">
-            <a class="active" href="#home">Home</a>
+            <a class="active" href="#home"><strong>Home</strong></a>
             <a href="#about">About</a>
             <a href="#github">GitHub</a>
             <a href="#contact" onclick="openForm()">Contact</a>
@@ -55,7 +64,7 @@
         <div class="row">
             <!-- Gallery Slideshow -->
             <div class="column_2"> <!-- Left column -->
-                <div class="slideshow-container"></div>
+                <div class="slideshow-container">
                     
                     <div class="mySlides fade" style="display: block;">
                         <div class="numbertext">1 / 3</div>   
@@ -75,7 +84,7 @@
 
                     <!-- The dots/circles -->
                     <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot active" onclick="currentSlide(1)"></span> 
                         <span class="dot" onclick="currentSlide(2)"></span> 
                         <span class="dot" onclick="currentSlide(3)"></span> 
                     </div>  
@@ -84,10 +93,8 @@
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-                <br>
-
-            
             </div>
+
             <!-- Writeup -->
             <div class="column_1" id="about"> <!-- Right Column -->
                 <h1>About</h1>
